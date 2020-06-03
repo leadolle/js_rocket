@@ -1,5 +1,5 @@
 .left{
-	background-color: mediumpurple;
+	background-color: #F4F074;
 	position: fixed;
 	width: 50%;
 	height:100%;
@@ -8,16 +8,16 @@
 }
 
 .ground{
-	background-color: black;
+	background: url('../img/background.jpeg.jpeg') no-repeat center center;
 	position: absolute;
 	bottom: 0;
 	left:0;
 	width: 100%;
-	height: 20px;
+	height:600px;
 }
 
 .right{
-	background-color: lawngreen;
+	background-color: white;
 	position: fixed;
 	width: 50%;
 	height:100%;
@@ -28,16 +28,36 @@
 .rocket{
 	position: absolute;
 	left: 50%;
-	bottom:20px;
-	width: 20px;
-	height: 100px;
-	background-color: dimgrey;
+	bottom:-35px;
+	width:200px;
+	height: 270px;
+	margin-left:-71.5px;
+	background: url('../img/buzz_d.png') no-repeat 0 0;
 	transition: bottom 10000ms;
+}
+
+/* rocket bg image*/
+body.body-state2 .rocket{
+	background-image: url('../img/state.jpeg');
+}
+body.body-state3 .rocket,
+body.body-state4 .rocket{
+	background-image: url('../img/state3.jpeg');
+
+}
+body.body-state5 .rocket{
+	background-image: url('../img/ohno.jpeg');
+	width: 450px;
+	height: 470px;
+	margin-left: -110px; 
+	margin-bottom: -140px;
+
 }
 
 body.body-state1 .rocket{
 	transition: none;
 }
+
 
 body.body-state3 .rocket,
 body.body-state4 .rocket{
