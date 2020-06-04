@@ -28,21 +28,21 @@
 .rocket{
 	position: absolute;
 	left: 50%;
-	bottom:-35px;
+	bottom:-150px;
 	width:200px;
 	height: 270px;
 	margin-left:-71.5px;
-	background: url('../img/buzz_d.png') no-repeat 0 0;
+	background: url('../img/buzz2.png') no-repeat 0 0;
 	transition: bottom 10000ms;
 }
 
 /* rocket bg image*/
 body.body-state2 .rocket{
-	background-image: url('../img/state.jpeg');
+	background-image: url('../img/buzz2.png');
 }
 body.body-state3 .rocket,
 body.body-state4 .rocket{
-	background-image: url('../img/state3.jpeg');
+	background-image: url('../img/buzz3.png');
 
 }
 body.body-state5 .rocket{
