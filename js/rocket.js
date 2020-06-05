@@ -6,11 +6,13 @@ var changeState = function (state) {
 	clearInterval (timer);
 	countdownNumber = 10;
 	document.getElementById('countdown').innerHTML = countdownNumber;
+	
 	//countdown
 	if (state == 2) {
 		timer = setInterval(function () {
 			countdownNumber = countdownNumber-1;
 			document.getElementById('countdown').innerHTML = countdownNumber;
+			
 			
 			if (countdownNumber <= 0){
 				
@@ -24,11 +26,16 @@ var changeState = function (state) {
 				console.log('randomNumber:', randomNumber)
 
 				//succes
-				if (randomNumber > 4) {
+				if (randomNumber > 6) {
 					changeState(4);	
 				}else {
 					changeState(5); // oh no!
 				}
+			if(randomNumber <= 6) {
+				document.getElementById('nervous').className = 'nervous show';
+			} else{document.getElementById('nervous').className = 'nervous';
+				}
+
 		}, 2000);
 	};
 
